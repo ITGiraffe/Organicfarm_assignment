@@ -1,0 +1,1023 @@
+/* Main setting */
+
+    body
+    {
+        /* Background pattern from Toptal Subtle Patterns for all pages */
+        background-image: url("images/png/windowBackground.png");
+        font-size: 20px;
+
+        /* specify font and color for whole pages/windows plus clear all margins as important */
+        font-family: Verdana;
+        color: black;
+        margin: 0 !important;
+    }
+
+    /* wrapper attributes, set width and center all for all pages */
+    .Container
+    {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* wrapper attributes for content for most pages */
+    .Content
+    {
+        background-color: rgb(255, 255, 255);
+    }
+
+/* top elements of pages */
+
+    /* set attrinutes for top advert */
+    .topAdvert
+    {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        width: 400px;
+        padding: 7px 0px 7px 150px;
+        margin: 0;
+    }
+
+    /* set attributes for My account area */
+    ol.topAccount
+    {
+        list-style-type: none;
+        width: 360px;
+        text-align: right;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        padding: 7px 0px;
+    }
+
+    /* hide elements of My account list */
+    ol.topAccount > li > ul
+    {
+        list-style-type: none;
+        display: none;
+        padding-left: 240px;
+    }
+
+    /* set attributes for My account area (hover) */
+    ol.topAccount > li:hover
+    {
+        /* shadows */
+        -webkit-box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+        -moz-box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+        box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+    }
+
+    /* show elements of My account list */
+    ol.topAccount > li:hover > ul
+    {
+        position: absolute;
+        display: block;
+
+        /* animation attribute */
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+
+    /* set attributes for elements of My account list */
+    ol.topAccount > li > ul > li
+    {
+        /* shape */
+        width: 110px;
+        background-color: rgb(12, 170, 60);
+        height: 25px;
+
+        /* font*/
+        text-align: center;
+        font-size: 18px;
+
+        /* position */
+        padding: 3px 5px;
+        margin: 1px 50px 1px 0px;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+
+        /* border */
+        border-radius: 10px 10px;
+        border: 1px solid rgb(15, 85, 36);
+
+        /* animation attribute */
+        opacity: 0;
+
+    }
+
+    /* when we hover list elements of My account list */
+    ol.topAccount > li > ul > li:hover
+    {
+        /* shadows */
+        -webkit-box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+        -moz-box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+        box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+    }
+
+    /* when we hover links of My account list */
+    ol.topAccount > li > ul > li:hover a
+    {
+        color:  rgb(229, 243, 33);
+        
+    }
+
+    /* set attributes for links of My account list */
+    ol.topAccount > li > ul > li a
+    {
+        
+        text-decoration: none;
+
+    }
+
+    /* animation attributes for My account list item 1 */
+    ol.topAccount > li > ul > li:nth-child(1)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 0ms;
+                animation-delay: 0ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+    /* animation attributes for My account list item 2 */
+    ol.topAccount > li > ul > li:nth-child(2)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 300ms;
+                animation-delay: 300ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+    /* animation attributes for My account list item 3 */
+    ol.topAccount > li > ul > li:nth-child(3)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 600ms;
+                animation-delay: 600ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+/* header elements attributes */
+
+    header
+    {
+        /* Background pattern from Toptal Subtle Patterns */
+        background-image: url("images/png/windowBackground.png");
+    }
+
+    /* LOGO image attributes as home link */
+    img.logoImage
+    {
+        margin: 2px 0px 1px 20px;
+    }
+
+    /* LOGO attributes as home link */
+    a.logo
+    {
+        text-decoration: none;
+        font-size: 85px;
+        color: #6ACA25;
+        font-family: Monotype Corsiva;
+        text-align: left;
+    }
+
+    /* search form attributes */
+    form.searchForm
+    {
+        /* set form for search button to "join" button and input */
+        position: relative;
+        display: inline-flex;
+    }
+
+    /* set attributes of search box */
+    input.search 
+    {
+        display: inline-block;
+        font-size: 18px;
+        padding: 1px 0px;
+        height: 36px;
+        width: 250px;
+        padding: 0px 7px;
+        margin: 30px 0px 0px 30px;
+
+        /* border attributes */
+        border-width: 2px;
+        border-radius: 18px;
+        border: 1px solid #3c9700;
+    }
+
+    /* search box when "clicked" */
+    input.search:focus
+    {
+        border: 1px solid #3c9700;
+        outline: none;
+
+        /* specify shadow around the search input in all browsers
+        webkit it is a web rendering engine used among others in chrome, safari or opera */
+        -webkit-box-shadow: 3px 3px 10px 4px rgba(60,151,0,0.9);
+
+        /* moz is for mozilla firefox (older versions) */
+        -moz-box-shadow: 3px 3px 10px 4px rgba(60,151,0,0.9);
+        box-shadow: 3px 3px 10px 4px rgba(60,151,0,0.9);
+    }
+
+    /* search button attributes */
+    button[name="submitSearch"] 
+    {
+        /* attributes to fix button inside input search */
+        position: absolute;
+        top: 35px;
+        right: 8px;
+        /* set of attributes to make button invisible (area around the button/picture) */
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+    }
+
+    /* display current date in proper place */
+    .datestyle
+    {
+        font-size: 20px;
+        padding: 10px 30px 0px 5px;
+    }
+
+    /* set basket and price as link and set their attributes */
+    a.basketlink
+    {
+        text-decoration: none;
+        text-align: center;
+        color:black;
+    }
+
+/* main navigation settings */
+
+    /* general set of attributes for menu panel */
+    .menu
+    {
+        width: 100%;
+        padding: 10px 10px;
+        background-image: url("images/png/menuBackground.jpg");
+        text-align: center;
+    }
+
+    /* general set of attributes for main options in menu (list) */
+    ol.topmenu
+    {   
+        padding: 0px 0px 5px 0px;
+        margin: 0px;
+        list-style-type: none;
+        font-size: 22px;
+        height: 34px;
+        line-height: 200%;
+        display: inline-block;
+
+    }
+
+    /* menu links attributes */
+    ol.topmenu a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+    }
+
+    /* attributes for every item in the menu */
+    ol.topmenu > li
+    {
+        float: left;
+        width: 165px;
+        height: 40px;
+    }
+
+    /* attributes for every item in the menu when hovering */
+    ol.topmenu > li:hover
+    {
+        background-color: lightyellow;
+        font-size: 25px;
+        border-right: none;
+        border-left: none;
+        border: 5px solid green;
+        border-radius: 700px 5000px;
+
+        /* shadows */
+        -webkit-box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+        -moz-box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+        box-shadow: 0px -2px 28px 2px rgba(161,153,161,1);
+    }
+
+    /* attributes for every link in the menu when hovering */
+    ol.topmenu > li:hover > a
+    {
+        color: #6ACA25;
+        font-weight: bold;
+    }
+
+    /* hide elements of account list */
+    ol.topmenu > li > ul
+    {
+        list-style-type: none;
+        display: none;
+    }
+
+    /* show elements of account list*/
+    ol.topmenu > li:hover > ul
+    {
+        position: absolute;
+        display: block;
+
+        /* animation attribute */
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+
+    /* set attributes for elements of dropdown menu list */
+    ol.topmenu > li > ul > li
+    {
+        /* shape */
+        width: 165px;
+        height: 40px;
+        background-color: rgb(12, 170, 60);
+
+        /* font*/
+        text-align: center;
+        font-size: 18px;
+
+        /* position */
+        padding: 3px 5px;
+        margin: 5px 0px 2px -40px;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+
+        /* border */
+        border-radius: 10px 10px;
+        border: 1px solid rgb(15, 85, 36);
+
+        /* animation attribute */
+        opacity: 0;
+
+    }
+
+    /* when we hover list elements of dropdown menu list */
+    ol.topmenu > li > ul > li:hover
+    {
+        /* shadows */
+        -webkit-box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+        -moz-box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+        box-shadow: 2px 2px 24px 0px rgba(104,222,140,1);
+    }
+
+    /* when we hover links of dropdown menu list */
+    ol.topmenu > li > ul > li:hover a
+    {
+        color:  rgb(229, 243, 33);
+        
+    }
+
+    /* set attributes for links of dropdown menu list */
+    ol.topmenu > li > ul > li a
+    {
+        
+        text-decoration: none;
+
+    }
+
+    /* animation attributes for dropdown menu list item 1 */
+    ol.topmenu > li > ul > li:nth-child(1)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 0ms;
+                animation-delay: 0ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+    /* animation attributes for dropdown menu list item 2 */
+    ol.topmenu > li > ul > li:nth-child(2)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 300ms;
+                animation-delay: 300ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+    /* animation attributes for dropdown menu list item 3 */
+    ol.topmenu > li > ul > li:nth-child(3)
+    {
+        -webkit-animation-name: accountAnimation;
+                animation-name: accountAnimation;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 600ms;
+                animation-delay: 600ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+/* side navigation settings */
+
+    /* general set of attributes for side menu panel */
+    nav#sideNav
+    {
+        /* Background pattern from Toptal Subtle Patterns */
+        background-image: url("images/png/side_Menu_Background.png");
+        width: 193px;
+        padding: 15px;
+        margin: 15px 15px 5px 15px;
+        border: 1px solid lightgray;
+
+        /* specify shadow around the search input in all browsers
+        webkit it is a web rendering engine used among others in chrome, safari or opera */
+        -webkit-box-shadow: -1px 0px 10px 7px rgba(196,192,196,1);
+
+        /* moz is for mozilla firefox (older versions) */
+        -moz-box-shadow: -1px 0px 10px 7px rgba(196,192,196,1);
+        box-shadow: -1px 0px 10px 7px rgba(196,192,196,1);
+    }
+
+    /* general set of attributes for main options in menu (list) */
+    ul.sidemenu
+    {
+        padding: 0;
+        margin: 0px;
+        list-style-type: none;
+        line-height: 200%;
+        display: inline-block;
+        
+    }
+
+      /* main link attributes in side navigation bar */
+      ul.sidemenu a.main_item
+      {
+          color: black;
+          font-weight: bold;
+          text-decoration: none;
+          display: block;
+      }
+
+    /* normal link attributes for side navigation bar */
+    ul.sidemenu a
+    {
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    /* attributes for every item in the side navigation bar */
+    ul.sidemenu > li
+    {
+        padding: 3px 5px 2px 5px;
+        
+    }
+
+    /* attributes for every item in the side navigation bar when hovering */
+    ul.sidemenu > li:hover
+    {
+        font-size: 25px;
+    }
+
+    /* attributes for every link in the side navigation bar when hovering */
+    ul.sidemenu > li:hover > a
+    {
+        font-weight: bold;
+    }
+
+/* main content */
+
+    /* general set of attributes for main content */
+    main
+    {
+        width: 759px;
+        padding-left: 4px;
+    }
+
+    /* set of attributes in php mode displaying shopping list */
+    p.paragraph_basket
+    {
+        font-size: 25px;
+        width: 700px;
+    }
+
+    /* farmer image attributes (Home page) */
+    img.farmerImage
+    {
+        width: 200px;
+        margin-top: 19px;
+        margin-right: 15px;
+
+        /* shadows */
+        -webkit-box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+        -moz-box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+        box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+    }
+
+    /* general set of attributes for video (Home page) */
+    video
+    {
+        display: block;
+        width: 721px;
+        padding: 0px 20px 0px 17px;
+    }
+
+/* styling sign in / log in page (extras) */
+
+    /* general set of attributes for main content */
+    main.sign_in_log_in_main
+    {
+        width: 884px;
+        margin: 10px 50px 5px 50px;
+        padding: 20px;
+
+    }
+
+    /* small text about loggin in/ signing in in log in page */
+    p.small_text_log_in
+    {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+
+/* styling contact us page (extras) */
+
+    /* style for header contact us page form title */
+    p.header_contact_us_form
+    {
+        text-align: center;
+        color: green;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: bold;
+
+    }
+
+    /* contact us inputs comments */
+    .contact_us_form
+    {
+        text-align: right;
+        font-weight: bold;
+        width: 650px;
+        font-size: 18px;
+        padding: 15px 10px;
+        margin: 5px 0px;
+    }
+
+    /* contact_us page div below main */
+    .contact_us_second_main
+    {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* contact us div containing form inputs */
+    .contact_us_form_div
+    {
+        border: solid lightgrey 2px;
+        padding: 4px;
+        margin-bottom: 20px;
+        
+    }
+
+/* picture styling */
+
+    /* div containing the content picture and title in all pages */
+    .picture_Style_div
+    {
+        float: left;
+        padding: 3px;
+    }
+
+    /* content pictures in all pages */
+    img.content_Image
+    {
+        width: 220px;
+        margin-top: 19px;
+        margin: 7px 5px 4px 3px;
+
+        /* shadows */
+        -webkit-box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+        -moz-box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+        box-shadow: 4px -3px 5px 3px rgba(161,153,161,1);
+    }
+
+    /* content image picture (as icon) in basket page*/
+    img.mini_content_img
+    {
+        width: 45px;
+        margin-right: 10px;
+    }
+
+    /* content pictures in all pages attributes (hover) */
+    img.content_Image:hover
+    {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+
+        width: 200px;
+        border: solid 3px black;
+    }
+
+    /* content picture links animation (hover) */
+    @keyframes shake 
+        {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+/* button styling */
+
+    /* content button links in all pages */
+    button[type=submit].button_picture_content
+    {
+        /* set of attributes to make button invisible (only content visible) */
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+
+        width: 247px;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 7px;
+        font-family: Monotype Corsiva;
+    }
+
+    /* content button links in all pages (hover) */
+    button[type=submit].button_picture_content:hover
+    {
+        /* set of attributes to make button invisible */
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+
+        color: green;
+        font-size: 32px;
+        font-weight: 600;
+        font-family: Monotype Corsiva;
+    }
+
+    /* general set of attributes for google & facebook button (log in & sign in page) */
+    button.google_btn
+    {
+        width: 730px;
+        height: 60px;
+        margin: 10px 80px;
+        font-size: 28px;
+        border-radius: 10px;
+    }
+
+    /* general set of attributes for google & facebook button (log in & sign in page as hover) */
+    button.google_btn:hover
+    {
+        font-weight: bold;
+        cursor: pointer;
+
+        /* shadows (explanations above in diff shadows)*/
+        -webkit-box-shadow: -1px 0px 24px -1px rgba(72,138,28,1);
+        -moz-box-shadow: -1px 0px 24px -1px rgba(72,138,28,1);
+        box-shadow: -1px 0px 24px -1px rgba(72,138,28,1);
+    }
+
+/* input styling */
+
+    /* general set of attributes for inputs (sign in / log in pages) */
+    input[type=email],
+    input[type=password]
+    {
+        width: 500px;
+        background-color: #efefef;
+        color: #666;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 15px 10px;
+        margin: 10px 100px 0px 180px;
+        box-sizing: border-box;
+    }
+
+    /* general set of attributes for inputs (sign in / log in pages as focus) */
+    input[type=email]:focus,
+    input[type=password]:focus
+    {
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        border: 2px solid #a5cda5;
+        background-color: #e9f3e9;
+        color: #428c42;
+    }
+
+    /* general set of attributes for button (sign in / log in pages) */
+    input.submit_btn[type=submit]
+    {
+        width: 500px;
+        background-color: #36b03c;
+        font-size: 26px;
+        color: white;
+        padding: 15px 10px;
+        margin: 20px 100px 0px 180px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+
+    /* general set of attributes for submit input  (sign in / log in pages as hover) */
+    input.submit_btn[type=submit]:hover
+    {
+        font-weight: bold;
+        background-color: #37b93d;
+
+        -webkit-box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+        -moz-box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+        box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+
+    }
+
+    /* general set of attributes for sign in button in basket page*/
+    input.submit_btn_basket[type=submit]
+    {
+        width: 300px;
+        background-color: #36b03c;
+        font-size: 26px;
+        color: white;
+        padding: 15px 10px;
+        margin: 20px 10px 0px 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+
+    /* general set of attributes for submit input in basket page (hover) */
+    input.submit_btn_basket[type=submit]:hover
+    {
+        font-weight: bold;
+        background-color: #37b93d;
+
+        -webkit-box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+        -moz-box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+        box-shadow: -1px 0px 24px -8px rgba(55,185,61,1);
+
+    }
+
+    /* set of attributes for inputs in contact us page form */
+    input.contact_us[type=text],
+    input.contact_us[type=email],
+    input.contact_us[type=tel],
+    input.contact_us[type=numeric],
+    select.contact_us
+    {
+        width: 250px;
+        background-color: #efefef;
+        color: #666;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 13px 10px;
+        margin: 5px 5px;
+        box-sizing: border-box;
+    }
+
+    /* set of attributes for inputs in contact us page form (focus) */
+    input.contact_us[type=text]:focus,
+    input.contact_us[type=email]:focus,
+    input.contact_us[type=tel]:focus,
+    input.contact_us[type=numeric]:focus,
+    select.contact_us:focus
+    {
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        border: 2px solid #a5cda5;
+        background-color: #e9f3e9;
+        color: #428c42; 
+    }
+
+    /* note for input telephone number in contact us page */
+    .note
+    {
+        text-align: right;
+        width: 890px;
+    }
+
+    /* set of attributes for contact us page user message textarea */
+    .contact_us_textarea
+    {
+        font-size: 21px;
+        background-color: #efefef;
+        color: #428c42;
+        margin: 15px;
+        font-weight: 600;
+    }
+
+
+/* footer content */
+
+    /* general set of attributes for footer (all pages) */
+    footer
+    {
+        /* Background pattern from Toptal Subtle Patterns */
+        background-image: url("images/png/footer.png");
+        font-size: 12px;
+        color: lawngreen;
+        height: 40px;
+
+        border-radius: 40px;
+        padding: 9px 30px 2px 30px;
+        margin: 25px 5px 15px 5px;
+
+        /* shadows */
+        -webkit-box-shadow: 0px 1px 28px 13px rgba(132,135,133,1);
+        -moz-box-shadow: 0px 1px 28px 13px rgba(132,135,133,1);
+        box-shadow: 0px 1px 28px 13px rgba(132,135,133,1);
+    }
+
+    /* general set of attributes for footer links (all pages) */
+    footer a
+    {
+        text-decoration: none;
+        color: lawngreen;
+        font-weight: bold;
+    }
+
+    /* general set of attributes for footer links when hovered (all pages) */
+    footer a:hover
+    {
+        text-decoration: none;
+        color: lawngreen;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+/* styling for all pages for all pages*/
+
+    /* to break div's line (from left) */
+    .horizontalLeftStyle
+    {
+        float: left;
+    }
+
+    /* to break div's line (from right) */
+    .horizontalRightStyle
+    {
+        float: right;
+    }
+
+    /* to finish breaking line for div's */
+    .clear
+    {
+        clear: both;
+    }
+
+    /* Table styling */
+    table 
+    {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    /* table cell style */
+    td
+    {
+
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+
+    }
+    
+    /* every even table row style */
+    tr:nth-child(even) 
+    {
+
+    background-color: #dddddd;
+
+    }
+
+    /* style for recapcha in sign in & contact us page */
+    .g-recaptcha
+    {
+        margin-top: 20px;
+        margin-left: 280px;
+        width: 300px;
+    }
+
+    /* special class will be added when menu bar will dissappear (class to make menu "sticky")*/
+    .Sticky
+    {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+    }
+
+    /* set of atributes for scrollUp button */
+    .scrollUp_button
+    {
+        width: 64px;
+        height: 64px;
+        text-decoration: none;
+        background: url("images/png/chevron.png") no-repeat 0px 0px;
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        display: none;
+    }
+
+    /* styling of h2 in any page */
+    h2
+    {
+        text-align: center;
+    }
+
+    /* style of error message in any page*/
+    .error
+    {
+        color: red;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    /* style for recapcha error in sign in page */
+    .error_border
+    {
+        border: red solid 4px;
+    }
+
+    /* style for success message in any page */
+    .success
+    {
+        color: green;
+        font-weight: bold;
+        padding-top: 8px;
+        padding-left: 20px;
+    }
+
+    /* Dropdown animation for menu */
+    @keyframes accountAnimation
+    {
+        0%{
+            opacity: 0;
+            transform: rotate(-90deg) translateY(30px);
+            }
+        100%{
+            opacity: 1;
+            transform: rotate(0deg) translateX(0px);
+            }
+    }

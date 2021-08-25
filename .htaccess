@@ -1,0 +1,26 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+# changing the name of the file in the tab and in the link code
+RewriteEngine on
+RewriteRule Home index.php
+RewriteRule Basket basket.php
+RewriteRule Login Log_in.php
+RewriteRule Sign-in Sign_in.php
+RewriteRule Account Account.php
+RewriteRule logout Log-out.php
+RewriteRule Register Register.php
+RewriteRule Meat Meat.php
+RewriteRule Beef Beef.php
+RewriteRule Lamb Lamb.php
+RewriteRule Pork Pork.php
+RewriteRule Poultry Poultry.php
+RewriteRule Chicken Chicken.php
+RewriteRule Duck Duck.php
+RewriteRule Turkey Turkey.php
+RewriteRule Vegetables Vegetables.php
+RewriteRule Fruits Fruits.php
+RewriteRule Contact-Us Contact_us.php
